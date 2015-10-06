@@ -1,1 +1,1 @@
-<testsuite errors="0" failures="0" name="Django Project Tests" skips="0" tests="1" time="0.013"><testcase classname="screenjunkies.tests.screenjunkiesViewsTestCase" name="test_index" time="0.004566" /></testsuite>
+<testsuite errors="0" failures="0" name="Django Project Tests" skips="0" tests="1" time="0.017"><testcase classname="screenjunkies.tests.screenjunkiesViewsTestCase" name="test_index" time="0.004742" /></testsuite>
