@@ -4,12 +4,13 @@ from screenjunkies.models import *
 
 
 # Create your tests here.
+#viewtest
 class screenjunkiesViewsTestCase(TestCase):
     def test_index(self):
         resp = self.client.get('/registrarse/')
         self.assertEqual(resp.status_code, 200)
 
-
+#modeltest
 class screenjunkiesModelUsuarioTestCase(TestCase):
     def crear_usuario(self, nombre="Alejandro"
                       , telefono="55555555"
@@ -29,3 +30,5 @@ class screenjunkiesModelUsuarioTestCase(TestCase):
         u = self.crear_usuario()
         self.assertTrue(isinstance(u, Usuario))
         self.assertEqual(u.__unicode__(), u.Nombre)
+
+#formtest

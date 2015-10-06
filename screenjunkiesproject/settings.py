@@ -38,7 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'screenjunkies',
-    'django_jenkins',
+    #'django_jenkins',
 )
 
 MIDDLEWARE_CLASSES = (
