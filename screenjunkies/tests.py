@@ -1,5 +1,6 @@
 from django.test import TestCase
-
+from django.utils import timezone
+from screenjunkies.models import *
 # Create your tests here.
 class screenjunkiesViewsTestCase(TestCase):
     def test_index(self):
@@ -7,8 +8,23 @@ class screenjunkiesViewsTestCase(TestCase):
         self.assertEqual(resp.status_code,200)
 
 
-"""class MyTest(TestCase):
-    def Test_Forms(self):
-        #Nombre, Telefono, Correo, Fecha Nacimiento, Direccion, Fecha Inicio de socio
-        from_data  = {'Alejandro','55555555','alexalejandroem@gmail.com','16/3/2015','7av 11-14 A Zona 12','28/10/2015'}
-"""
+def screenjunkiesModelUsuarioTestCase(self):
+    def crear_usuario(self, nombre="Alejandro"
+                      , telefono="55555555"
+                      , correoElectronico ="alexalejandro123@gmail.com"
+                      ,fechaNacimiento=timezone.now()
+                      , direccionDomicilio="7av 16-16 A Zona 15"
+                      , fechaInicioSocio=timezone.now()):
+
+        return Usuario.objects.create(nombre=nombre
+                                      , telefono = telefono
+                                      , correoElectronico=correoElectronico
+                                      ,fechaNacimiento=fechaNacimiento
+                                      ,direccionDomicilio=direccionDomicilio
+                                      ,fechaInicioSocio=fechaInicioSocio)
+
+    def prueba_crear_usuario(self):
+        u = self.crear_usuario()
+        self.assertTrue(isinstance(u, Usuario))
+        self.assertEqual(u.__unicode__(), u.nombre)
+
