@@ -3,12 +3,15 @@ from django.utils import timezone
 from screenjunkies.models import *
 from screenjunkies.forms import *
 
+
 # Create your tests here.
 #viewtest
 class screenjunkiesViewsTestCase(TestCase):
     def test_index(self):
         resp = self.client.get('/registrarse/')
         self.assertEqual(resp.status_code, 200)
+
+    def
 
 #modeltest
 class screenjunkiesModelUsuarioTestCase(TestCase):

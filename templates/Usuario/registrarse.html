@@ -5,5 +5,9 @@
 {% endblock %}
 
 {% block content %}
-    Hola página de registro
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Create Comment">
+    </form>
 {% endblock %}
