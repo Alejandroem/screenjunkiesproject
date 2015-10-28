@@ -1,0 +1,5 @@
+<testsuite errors="0" failures="1" name="Django Project Tests" skips="0" tests="1" time="0.030"><testcase classname="screenjunkies.tests.screenjunkiesViewsTestCase" name="test_index" time="0.008532"><failure message="404 != 200" type="exceptions.AssertionError">Traceback (most recent call last):
+  File "/home/debian/PycharmProjects/screenjunkiesproject/screenjunkies/tests.py", line 7, in test_index
+    self.assertEqual(resp.status_code,200)
+AssertionError: 404 != 200
+</failure></testcase></testsuite>
