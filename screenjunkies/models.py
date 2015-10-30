@@ -16,3 +16,13 @@ class Usuario(models.Model):
     class Meta:
         db_table = 'Usuario'
 
+class Vinculo(models.Model):
+    usuario1= models.ManyToManyField(Usuario,related_name='Usuario1')
+    usuario2= models.ManyToManyField(Usuario,related_name='Usuario2')
+    descripcion= models.CharField(max_length=100)
+
+    def __unicode__(self):
+        return self.descripcion
+
+    class Meta:
+        db_table = 'Vinculo'

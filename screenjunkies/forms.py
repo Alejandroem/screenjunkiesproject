@@ -11,3 +11,7 @@ class UsuarioForm(forms.ModelForm):
     class Meta:
         model = Usuario
         fields = '__all__'
+class VinculoForm(forms.ModelForm):
+    class Meta:
+        model = Vinculo
+        fields = '__all__'

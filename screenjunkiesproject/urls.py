@@ -21,4 +21,5 @@ from screenjunkies import views
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^registrarse/$', "screenjunkies.views.registrarse", name="Registrarse"),
+    url(r'^vincular/$', "screenjunkies.views.vincular", name="Vincular"),
 ]
