@@ -17,6 +17,7 @@ from django.conf.urls import include, url
 from django.contrib import admin
 from screenjunkies import views
 
+
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^registrarse/$', "screenjunkies.views.registrarse", name="Registrarse"),

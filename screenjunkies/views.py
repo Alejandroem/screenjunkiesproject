@@ -1,6 +1,7 @@
 from django.shortcuts import render,HttpResponse
 from screenjunkies.forms import *
 
+
 # Create your views here.
 def registrarse(request):
 
