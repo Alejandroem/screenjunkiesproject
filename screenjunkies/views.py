@@ -3,6 +3,9 @@ from screenjunkies.forms import *
 
 
 # Create your views here.
+def index(request):
+    return render(request,"index.html")
+
 def registrarse(request):
 
     if request.method =="POST":
